@@ -1,0 +1,7 @@
+<div>
+  <a [routerLink]="['/projects' ,user().id,'tasks']" routerLinkActive="selected" >
+    <!-- <img [src]="imagePath()" [alt]="user().name" /> -->
+    <img src="{{user().avatar}}" />
+    <span>{{ user().name }}</span>
+  </a>
+</div>

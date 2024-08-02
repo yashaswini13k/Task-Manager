@@ -1,0 +1,12 @@
+<app-card>
+  <article>
+    <h3>{{ task().title }}</h3>
+    <br>
+    <p>{{ task().description}}</p>
+    <p>{{ task().type }}</p>
+    <h6 style="font-weight: bold;">{{ task().priority }}</h6>
+    <p class="actions">
+      <button (click)="onComplete()">Complete</button>
+    </p>
+  </article>
+</app-card>
